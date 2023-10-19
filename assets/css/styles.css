@@ -1,0 +1,107 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
+
+/* Body styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(232, 232, 232);
+}
+hr {
+    margin: 5px;
+}
+h4 {
+    text-align: center;
+    font-size: 250%;
+}
+h5 { /*box title*/
+    font-size: 200%;
+}
+h6 { /*dates and such*/
+    font-size: 100%;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+/*header and footer*/
+header {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding: 20px;
+}
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    font-size: 300%;
+}
+header p {
+    font-size: 150%;
+}
+
+/*main content*/
+.main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px 20px;
+
+    min-height: calc(100vh - 138px - 44px - 62px);
+}
+.content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.content:last-child {
+    margin-bottom: 0;
+}
+.content2 {
+    margin-bottom: 20px;
+}
+.content2:last-child {
+    margin-bottom: 0;
+}
+video {
+    display: block;
+    margin: auto;
+}
+ul {
+    list-style-type: square;
+    margin: 0px 0px 0px 20px;
+}
+
+/*buttons*/
+.btn-group button {
+    background-color: grey;
+    border: 0px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: left;
+
+    width: 33.33333%;
+    transition-duration: 0.4s;
+    font-size: 20px;
+}
+a:link, a:visited, a:hover {
+    text-decoration: none;
+    color: white;
+}
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+.btn-group button:hover {
+    background-color: rgb(187, 187, 187);
+}
